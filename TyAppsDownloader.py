@@ -5,7 +5,7 @@ import os
 Version = 1.0
 
 dlurl_tal = "https://github.com/BakedTaiyaki093/TyAppsLauncher/raw/refs/heads/main/releases/TyAppsLauncher.zip"
-dlurl_tdl = "https://raw.githubusercontent.com/BakedTaiyaki093/TyAppsDownLoader/main/releases/TyAppsDownLoader.zip"
+dlurl_tdl = "https://github.com/BakedTaiyaki093/TyAppsDownloader/raw/refs/heads/main/releases/TyAppsDownLoader.zip"
 
 # テキストファイルからフォルダパスを取得
 with open("dirct.txt", "r", encoding="utf_8") as file:
