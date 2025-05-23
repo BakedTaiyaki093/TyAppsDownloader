@@ -5,6 +5,7 @@ import os
 Version = 1.0
 
 dlurl_tal = "https://github.com/BakedTaiyaki093/TyAppsLauncher/raw/refs/heads/main/releases/TyAppsLauncher.zip"
+dlurl_tdl = ""
 
 # テキストファイルからフォルダパスを取得
 with open("dirct.txt", "r", encoding="utf_8") as file:
@@ -15,7 +16,7 @@ if not os.path.exists(dlfolder):
     print(f"エラー: 指定されたフォルダが存在しません → {dlfolder}")
 else:
     # ダウンロード先のファイルパスを設定
-    download_path = os.path.join(dlfolder, "TyAppsLauncher.zip")
+    download_path = os.path.join(dlfolder, "TyAppsdownload.zip")
 
     # ダウンロード処理（ボタンを押したときに実行）
     def dltal_f():
