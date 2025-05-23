@@ -5,7 +5,7 @@ import os
 Version = 1.0
 
 dlurl_tal = "https://github.com/BakedTaiyaki093/TyAppsLauncher/raw/refs/heads/main/releases/TyAppsLauncher.zip"
-dlurl_tdl = ""
+dlurl_tdl = "https://raw.githubusercontent.com/BakedTaiyaki093/TyAppsDownLoader/main/releases/TyAppsDownLoader.zip"
 
 # テキストファイルからフォルダパスを取得
 with open("dirct.txt", "r", encoding="utf_8") as file:
@@ -22,6 +22,9 @@ else:
     def dltal_f():
         ur.urlretrieve(dlurl_tal, download_path)
         print(f"ダウンロード完了: {download_path}")
+    def dltdl_f():
+        ur.urlretrieve(dlurl_tdl, download_path)
+        print(f"ダウンロード完了: {download_path}")
 
     # GUI
     root = tk.Tk()
@@ -30,5 +33,8 @@ else:
 
     btn_tal = tk.Button(root, text="TyAppsLauncher", command=dltal_f)
     btn_tal.place(relx=0.13, rely=0.1, anchor=tk.CENTER)
+    
+    btn_tdl = tk.Button(root, text = "TyAppsDownLoader", command= dltdl_f)
+    btn_tdl.place(relx = 0.15, rely = 0.13, anchor=tk.CENTER)
 
     root.mainloop()
